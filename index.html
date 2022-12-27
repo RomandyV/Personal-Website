@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <!--Get Bootstrap icons via CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <title>Frontend Bootcamp</title>
+    <title>Romandy's Personal Website</title>
 </head>
 <body>
     <!--
@@ -23,7 +23,7 @@
     -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+            <a href="#" class="navbar-brand">Romandy's Personal Website</a>
 
             <!--Hamburger menu button created when resolution is small, stores the navigation options-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -35,33 +35,32 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#learn" class="nav-link">What you'll learn</a>
+                        <a href="#about-me" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#questions" class="nav-link">Questions</a>
+                        <a href="#assignments-projects" class="nav-link">Assignments/Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#instructors" class="nav-link">Instructors</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>  
     </nav>
-    <!--Showcase-->
+
+    <!--Introduction-->
     <!-- p-5 is padding, p-lg-5 is padding on large screen to 5. -->
     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
             <!--Flexbox: Create row so elements are side by side. class to determine when flexbox should be active
             (based on dimension)-->
             <div class="d-sm-flex align-items-center justify-content-between">
+                <img src="images/CIS290PIC.jpg" alt="A profile picture of me." class="m-5 rounded-circle mb-3" width="30%"/>
                 <div>
-                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <h1>Hi, my name is <span class="text-info">Romandy Vu</span></h1>
                     <!--Margin on y axis by 4-->
-                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad aliquid excepturi consequatur commodi exercitationem autem cum provident debitis impedit molestiae nam mollitia nesciunt in, asperiores rem praesentium! Molestiae, excepturi!</p>
-                    <button class="btn btn-primary btn-lg mb-5" data-bs-toggle="modal" data-bs-target="#enroll">Start Enrollment</button>
+                    <p class="lead my-4">I'm a <span class="text-warning">Computer Science</span> student at <span class="text-primary">Grand Valley State University</span> who is aspiring to become a software developer.</p>
                 </div>
-                <!--class to keep it in the container. d for display-->
-                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="We did not download the image.">
 
             </div>
 
@@ -69,322 +68,324 @@
 
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="enrollLabel">Enter Information</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="lead">Fill out this form and we will get back to you.</p>
-                <form>
-                    <div class="mb-3">
-                        <label for="first-name" class="col-form-label">
-                            First Name: 
-                        </label>
-                        <input class="form-control" id="first-name">
-
-                        <label for="last-name" class="col-form-label">
-                            Last Name: 
-                        </label>
-                        <input class="form-control" id="last-name">
-
-                        <label for="email" class="col-form-label">
-                            Email: 
-                        </label>
-                        <input class="form-control" id="email-name">
-                    </div>
-                
-
-                </form>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!--Newsletter-->
-    <section class="bg-primary text-light p-5">
+    <!--Blue ribbon-->
+    <section class="bg-primary text-light p-3">
         <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <!--Margin bottom (mb) 3.-->
-                <h3 class="mb mb-md-0">Sign Up For Our Newsletter</h3>
-
-                <!--Input group for text, aria for accessibility, news-input referenced in style.css -->
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Username"
-                    aria-describedby="button-addon2"/>
-                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Sign up</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--Boxes/Cards-->
-    <section class="p-5">
-        <div class="container">
-            <div class="row text-center">
-
+            <h2 class="text-center mb-4 mt-4">Experience</h2>
+            <div class="row align-items-center">
                 <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <!--g for gap (spacing)-->
-                        <div class="card-body text-center g-4">
-                            <div class="h1 mb-3">
-                            <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Virtual</h3>
-                            <P class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos debitis laboriosam molestiae nihil alias animi veniam! Alias incidunt iure ipsa eveniet nisi, accusamus, odio minus illum sint necessitatibus velit dignissimos.</P>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                </div>
+                    <div class="card row">
+                        <div class="card-body col-7 mx-auto d-block">
+                            <img src="images/icons8-java-100.svg" alt="Java Icon from Icons8" class="img-fluid"/>
+                            <img src="https://img.icons8.com/color/100/null/python--v1.png"/>
+                            <img src="https://img.icons8.com/color/100/null/html-5--v1.png" class="img-fluid"/>
+                            <img src="https://img.icons8.com/color/100/null/css3.png" class="img-fluid"/>
+                            <img src="https://img.icons8.com/glyph-neue/100/null/github.png"/>
+                            <img src="https://img.icons8.com/color/100/null/c-plus-plus-logo.png"/>
+                            <img src="https://img.icons8.com/fluency/100/null/c-programming.png"/>
 
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                            <i class="bi bi-person-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3">Hybrid</h3>
-                            <P class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos debitis laboriosam molestiae nihil alias animi veniam! Alias incidunt iure ipsa eveniet nisi, accusamus, odio minus illum sint necessitatibus velit dignissimos.</P>
-                            <a href="#" class="btn btn-dark">Read more</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                            <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="card-title mb-3">In-person</h3>
-                            <P class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos debitis laboriosam molestiae nihil alias animi veniam! Alias incidunt iure ipsa eveniet nisi, accusamus, odio minus illum sint necessitatibus velit dignissimos.</P>
-                            <a href="#" class="btn btn-primary">Read more</a>
+
                         </div>
+                        
+
                     </div>
+                    
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!--Learn section-->
-    <section id="learn" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="" alt="We didn't download image!" class="img-fluid">
-                </div>
-                    <div class="col-md" p-5>
-                        <h2>Learn The Fundamentals</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur incidunt aperiam sapiente unde mollitia deleniti, consectetur nostrum amet doloribus ipsum. Eius non sequi in, odio nam cumque quis possimus!
-                        </p>
-                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, quas voluptas, at eveniet placeat ratione suscipit ipsam soluta quam ad excepturi a numquam voluptates unde sequi? Modi ipsum illo voluptates.</p>
-                        <a class="btn btn-light mt-3" href="#"><i class="bi bi-chevron-right"> Read More</i></a>
-                    </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <!--Learn section-->
-    <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                
-                    <div class="col-md" p-5>
-                        <h2>Learn React</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur incidunt aperiam sapiente unde mollitia deleniti, consectetur nostrum amet doloribus ipsum. Eius non sequi in, odio nam cumque quis possimus!
-                        </p>
-                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, quas voluptas, at eveniet placeat ratione suscipit ipsam soluta quam ad excepturi a numquam voluptates unde sequi? Modi ipsum illo voluptates.</p>
-                        <a class="btn btn-light mt-3" href="#"><i class="bi bi-chevron-right"> Read More</i></a>
-                    </div>
-
-                    <div class="col-md">
-                        <img src="" alt="We didn't download image!" class="img-fluid">
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!--FAQ Accordion-->
-    <section id="questions" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-            <div class="accordion accordion-flush" id="questions">
-                <!--Item 1-->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <!--data-bs-target is important for the drop down (answer)-->
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1">
-                      Where exactly are you located?
-                    </button>
-                  </h2>
-                  <div id="question-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sequi est asperiores quam quod debitis, eos a voluptas fugit fugiat facilis dolores repudiandae cum enim. Saepe exercitationem sit corporis? Accusantium!</div>
-                  </div>
-                </div>
-
-                <!--Item 2-->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Hoe much does it cost to attend>
-                    </button>
-                  </h2>
-                  <div id="question-2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita ipsa nisi dolor perferendis? Ab pariatur ducimus vel provident fugit officiis ullam dolorem laudantium? Magnam id adipisci vel neque quo!</div>
-                  </div>
-                </div>
-
-                <!--Item 3-->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3" aria-expanded="false" aria-controls="flush-collapseThree">
-                      What do I need to know?
-                    </button>
-                  </h2>
-                  <div id="question-3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
-                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum possimus asperiores ratione nostrum facere nobis ea eius, saepe perferendis magni architecto odit ipsa at dignissimos corporis quod fugiat totam vel.</div>
-                  </div>
-                </div>
-
-              <!--Item 4-->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    How do I sign up?
-                  </button>
-                </h2>
-                <div id="question-4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
-                  <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum possimus asperiores ratione nostrum facere nobis ea eius, saepe perferendis magni architecto odit ipsa at dignissimos corporis quod fugiat totam vel.</div>
-                </div>
-              </div>
-
-            <!--Item 5-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-5" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Do you help me find a job?
-                  </button>
-                </h2>
-                <div id="question-5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
-                  <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum possimus asperiores ratione nostrum facere nobis ea eius, saepe perferendis magni architecto odit ipsa at dignissimos corporis quod fugiat totam vel.</div>
-                </div>
-              </div>
+            
 
         </div>
-    </section>
-
-    <!--Instructors-->
-    <section id="instructors" class="p-5 bg-primary">
-        <div class="container">
-            <h2 class="text-center text-white">Our Instructors</h2>
-            <p class="lead text-center text-white mb-5">Our instructors have over 5+ years working as a web developer in the industry.</p>
-
-            <!--This is a row-->
-            <div class="row g-4">
-                
-                <!-- A card of the row-->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Image from randomuser.me" class="rounded-circle mb-3"/>
-                        <h3 class="card-title mb-3">John Doe</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugiat ex commodi. Sint eveniet in dolores consequuntur aliquam quasi cum. Omnis consectetur voluptatum consequuntur, iure voluptate nobis dolores modi minus?</p>
-                        <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-github text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- A card of the row-->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Image from randomuser.me" class="rounded-circle mb-3"/>
-                        <h3 class="card-title mb-3">Jane Smith</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugiat ex commodi. Sint eveniet in dolores consequuntur aliquam quasi cum. Omnis consectetur voluptatum consequuntur, iure voluptate nobis dolores modi minus?</p>
-                        <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-github text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- A card of the row-->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                        <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Image from randomuser.me" class="rounded-circle mb-3"/>
-                        <h3 class="card-title mb-3">John Smith</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugiat ex commodi. Sint eveniet in dolores consequuntur aliquam quasi cum. Omnis consectetur voluptatum consequuntur, iure voluptate nobis dolores modi minus?</p>
-                        <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-github text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- A card of the row-->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Image from randomuser.me" class="rounded-circle mb-3"/>
-                        <h3 class="card-title mb-3">Jane Smith</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugiat ex commodi. Sint eveniet in dolores consequuntur aliquam quasi cum. Omnis consectetur voluptatum consequuntur, iure voluptate nobis dolores modi minus?</p>
-                        <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                        <a href="#" class=""><i class="bi bi-github text-dark mx-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             
         </div>
+        
+
+    </section>
+        
+
     </section>
 
-    <!--Contact and Map-->
-    <section class="p-5">
+    <!--About me section-->
+    <section id="about-me" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-4">About Me</h2>
+            
+            <!--Section-->
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bTxl4SB07Zo?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    <div class="col-md">
+                        <p class="lead">
+                            Being born in this generation, technology has played an important part of my life. It made learning more interactive and enjoyable. When my elementary school got Elmo boards my classroom had a competition to see who could do multiplication the fastest. The board allowed the teacher to share the computer screen to the whiteboard while being able to interact it with a electronic pen. This greatly helped me with my education because it was fun and was more entertaining than following along in an overhead projector. 
+                        </p>
+
+                        <p class="lead">I also like working with creative software tools like Adobe products since I am able to see and share my own creation. It's worthwhile and enjoyable to work and see my creations come to life Because of this, I aspire to become a software developer.
+                        </p>
+                    </div>
+
+            </div>
+
+            <div class="row align-items-center justify-content-between"><p></p></div>
+
+
+            <div class="row align-items-center justify-content-between">
+                
+                    <div class="col-md">
+                        
+                    </div>
+
+                    
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Learn section-->
+    <section id="assignments-projects" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                
+                    <div class="col-md text-center" p-5>
+                        <h2 class="mb-3 mt-3">Assignment/Projects</h2>
+                        <div class="accordion accordion-flush" id="tasks">
+                            <!--Item 1-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-1">
+                                  <h4 class="accordion-header">Dice Game</h4>
+                                </button>
+                              
+                              <div id="task-1" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">This is one of my first school programming projects. The GUI was provided, however, our task was to write the logic for the game which required us to know the basics of programming such as conditional statements and the linked list data structure.</div>
+                                
+                                <div class="m-1">
+                                    <img src="images/DiceGameImage.jpg" alt="Sample images from Dice Game" class="img-fluid"/>
+                                </div>
+
+                                <div class="m-2">
+                                    <h5 class="accordion-header">Languages/Frameworks</h5>
+                                    <img src="images/icons8-java-100.svg" alt="Java Icon from Icons8" class="img-fluid"/>
+                                </div>
+                                
+
+                                <div>
+                                    <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/RomandyV/Dice-Game" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <!--Item 2-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-2">
+                                  <h4 class="accordion-header">Turn-based Game</h4>
+                                </button>
+                              
+                              <div id="task-2" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">
+                                    This is a turn-based game played in the terminal where the player would be given random stats and would have to clear monsters from 4 directions. The player can level up to unlock spells to help clear all the monsters. This assignment tested our knowledge on inheritance, polymorphism, and the linked list data structure. We had to implement our own linked list.
+                                    <div class="m-2">
+                                        <h5 class="accordion-header">Languages/Frameworks</h5>
+                                        <img src="images/icons8-java-100.svg" alt="Java Icon from Icons8" class="img-fluid"/>
+                                    </div>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/RomandyV/Turn-Based-Game" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                                </div>
+
+                              
+                            </div>
+
+                            <!--Item 3-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-3">
+                                  <h4 class="accordion-header">Database Project</h4>
+                                </button>
+                              
+                              <div id="task-3" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">
+                                    This assignment helped me understand how to create a database. It involves determining the entities, primary keys, attributes and relationships. I also learned how to write SQL queries.
+                                    <div class="m-2">
+                                        <img src="images/Screenshot 2022-12-27 102856.jpg" alt="Java Icon from Icons8" class="img-fluid" width="60%"/>
+                                        <h5 class="accordion-header mb-2">Languages/Frameworks</h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-filetype-sql" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"/>
+                                          </svg>
+                                    </div>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/GVSU-Romandy-Vu/ShoeCompanyDB" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                                </div>
+
+                              
+                            </div>
+
+                            <!--Item 4-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-4">
+                                  <h4 class="accordion-header">Two Player Board Game Suite</h4>
+                                </button>
+                              
+                              <div id="task-4" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">
+                                    This suite contained two games with a GUI: Battleship and Connect Four. This project was done to help us understand the software development cycle like writing documentation, determining use cases, and writing test cases.
+                                    <div class="m-2">
+                                        <img src="images/TwoPBGBattleship.jpg" alt="Sample images from Two Player Board Games Suite: Battleship game." class="img-fluid"/>
+                                        <div class="m-2">
+                                            <h5 class="accordion-header">Languages/Frameworks</h5>
+                                            <img src="images/icons8-java-100.svg" alt="Java Icon from Icons8" class="img-fluid"/>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/Polewarc323/TwoPlayerBG" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                                
+                              </div>
+                            </div>
+
+                            <!--Item 5-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-5">
+                                  <h4 class="accordion-header">Pothole Detector Model</h4>
+                                </button>
+
+                                <div id="task-5" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                    <div class="accordion-body">
+                                        From this project I learned the process of developing a model using supervised learning. This was a term project, and I thought creating a model that can detect pothole images from the viewpoint of a car might be useful for self-driving cars. There were a lot of issues when trying to set up the model, but at the end the model was able to reach an accuracy of ~70% from the testing dataset.
+                                        <div class="m-2">
+                                            <img src="images/PotholeSample.jpg" alt="Sample image of Pothole demo" class="img-fluid"/>
+                                            <div class="m-2">
+                                                <h5 class="accordion-header mb-2">Languages/Frameworks</h5>
+                                                <img src="https://img.icons8.com/color/100/null/python--v1.png"/>
+                                                <a class="img-fluid" title="PyTorch, BSD &lt;http://opensource.org/licenses/bsd-license.php&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PyTorch_logo_black.svg"><img width="256" alt="PyTorch logo black" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/256px-PyTorch_logo_black.svg.png"></a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://www.kaggle.com/code/romandyvu/pothole-detector-project" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                              
+                                </div>
+                            </div>
+
+                            <!--Item 6-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-6">
+                                  <h4 class="accordion-header">Personal Website</h4>
+                                </button>
+                              
+                              <div id="task-6" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">This is a personal project to learn web development by myself. So far I learned HTML5, CSS, and Bootstrap. HTML5 is to structure the website, CSS is to style the website, and Bootstrap is a CSS framework to make the website responsive (i.e. making it look viewable in lower screen resolutions).</div>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe src="index.html" class="embed-responsive-item" width="80%" height="700"></iframe>
+                                    <h5 class="accordion-header mb-2">Languages/Frameworks</h5>
+                                    <img src="https://img.icons8.com/color/100/null/html-5--v1.png" class="img-fluid"/>
+                                    <img src="https://img.icons8.com/color/100/null/css3.png" class="img-fluid"/>
+                                    <img src="https://img.icons8.com/color/100/null/bootstrap.png" class="img-fluid"/>
+
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/RomandyV/Personal-Website" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                              </div>
+                            </div>
+
+                            <!--Item 7-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-7">
+                                  <h4 class="accordion-header">Simple Cipher</h4>
+                                </button>
+                              
+                              <div id="task-7" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">This is a simple personal project that I made for more security for my passwords. I wrote it on a python notebook so that I can access the code from my phone.</div>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <h5 class="accordion-header mb-2">Languages/Frameworks</h5>
+                                    <img src="https://img.icons8.com/color/100/null/python--v1.png " class="img-fluid"/>
+                                    
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://colab.research.google.com/drive/1GAy_qUcj2gPX8fLfYuoN6eXxKCNBfNBI?usp=sharing" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                              </div>
+                            </div>
+
+                            <!--Item 8-->
+                            <div class="accordion-item">
+                              
+                                <!--data-bs-target is important for the drop down (answer)-->
+                                
+                                <!--Change the target and ID!!!-->
+                                <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#task-8">
+                                  <h4 class="accordion-header">Breakout Game</h4>
+                                </button>
+                              
+                              <div id="task-8" class="accordion-collapse collapse text-bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#tasks">
+                                <div class="accordion-body">This is a simple breakout game where the goal is to break all the blocks using the ball and paddle. Score is determined by how many times the ball hits a block. Each color block has a set amount of health. The player has 5 lives and loses 1 when the ball hits the bottom of the screen. Players can create additional balls by pressing the spacebar.
+
+                                    <div class="mt-4 mb-4">
+                                    <img src="images/Breakoutimage.jpg" class-img="img-fluid" alt="Breakout game sample image." width="50%">
+                                    <h5 class="accordion-header mt-4 mb-2">Languages/Frameworks</h5>
+                                    <img src="https://img.icons8.com/color/100/null/python--v1.png " class="img-fluid"/>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary mb-3 mt-3"><a href="https://github.com/GVSU-Romandy-Vu/BreakoutGame" target="_blank" class="btn btn-primary">View Source Code</a></button>
+                              </div>
+                            </div>
+
+                            
+            
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="p-5" id="contact">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
                     <h2 class="text-center mb-4">Contact Information</h2>
                     <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> USA
-                        </li>
 
                         <li class="list-group-item">
-                            <span class="fw-bold">Phone:</span> N/A
-                        </li>
-
-                        <li class="list-group-item">
-                            <span class="fw-bold">Student Email:</span> N/A
-                        </li>
-
-                        <li class="list-group-item">
-                            <span class="fw-bold">Enrollment Email:</span> N/A
+                            <span class="fw-bold"> Email: <a href = "mailto: vuromandy@gmail.com" class="fw-bold">vuromandy@gmail.com</a> </span> 
                         </li>
                     </ul>
                 </div>
-                <!--Map (Requires Mapbox account)-->
-                <div class="col-md">
-                    <img src="Screenshot 2022-12-22 110131.jpg" alt="Screenshot" class=" mb-3" width="80%"/>
+                <div class="text-center">
+                    <a href="https://www.linkedin.com/in/romandyvu" target="_blank" class=""><i class="bi bi-linkedin text-dark" width="100" height="100"></i></a>
                 </div>
+                
 
             </div>
         </div>
@@ -392,8 +393,10 @@
     
     <!--Footer-->
     <footer class="p-5 bg-dark text-white text-center position-relative">
+        
         <div class="container">
-            <p class="lead">Copyright &copy 2022 Frontend Bootcamp</p>
+            <a target="_blank" href="https://icons8.com/icon/2572/java" class="lead"></a> Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <p class="lead"></p>
             <a class="position-absolute bottom-0 end-0 p-5" href="#">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>

@@ -3,6 +3,7 @@ body::before{
     display:block;
     content: '';
     height: 60px;
+    background-color: black;
 }
 /*Media query, if over min-width, make width 50%*/
 @media(min-width: 768px){

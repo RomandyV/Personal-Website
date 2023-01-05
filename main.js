@@ -1,0 +1,17 @@
+$(document).ready(function()
+        {
+            $('.first-fade').hide();
+            $('.second-fade').hide();
+            $('.third-fade').hide();
+            $('.fourth-fade').hide();
+            $('.fifth-fade').hide();
+            $('.first-fade').fadeIn('2000');
+            setTimeout(2000);
+            $('.second-fade').fadeIn('2000');
+            setTimeout(2000);
+            $('.third-fade').fadeIn('2000');
+            setTimeout(2000);
+            $('.fourth-fade').fadeIn('2000');
+            setTimeout(2000);
+            $('.fifth-fade').fadeIn('2000');
+        });
